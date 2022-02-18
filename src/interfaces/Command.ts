@@ -1,7 +1,7 @@
 import Client from '../structures/Client'
 import { CommandInteraction, CommandInteractionOption } from 'discord.js'
 
-export type CommandRun = (nteraction: CommandInteraction) => any
+export type CommandRun = (interaction: CommandInteraction) => any
 
 export interface Command {
   data: any
