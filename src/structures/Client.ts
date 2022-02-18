@@ -57,14 +57,22 @@ export default class InfernoClient extends Client {
       const answer2 = modal.getTextInputValue('question2' + modal.user.id)
       //if you added more questions, you can add them answers here
       modal.reply('Thank you for your application! We will review it as soon as possible.')
-      const result: string = `**${modal.user.tag}**\n\n**Question 1:** ${answer1}\n**Question 2:** ${answer2}`
+      let result: string = `**${modal.user.tag}**\n\n**Question 1:** ${answer1}\n**Question 2:** ${answer2}`
       console.log(format(new Date(), 'YYYY/MM/DD HH:mm') + result.replaceAll('**', ' '))
-      console.log("-----------------------------------------------------")
+      console.log('-----------------------------------------------------')
+      if (result.length > 2040) {
+        result =
+          'The application is too long to be displayed in the embed, please check the bot logs.'
+        console.log('^^^^ Cannot send embed, sending text to console instead ^^^^')
+        console.log('-----------------------------------------------------')
+      }
+
       const embed = new MessageEmbed()
         .setTitle('Application from ' + modal.user.tag)
         .setDescription(result)
         .setTimestamp()
         .setFooter({ text: 'Made by lyertia' })
+
       logs.send({ embeds: [embed] })
     })
   }
