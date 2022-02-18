@@ -1,0 +1,34 @@
+{
+  "name": "discord-application-bot",
+  "version": "1.0.0",
+  "description": "Staff applications bot for discord. Created by lyertia.",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only --poll ./src/index.ts",
+    "start": "ts-node ./src/index.ts",
+    "respawn": "node dist/index.js",
+    "format": "prettier --write .",
+    "build": "tsc"
+  },
+  "author": "drago26",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/common-tags": "^1.8.1",
+    "@types/ms": "^0.7.31",
+    "@types/node": "^14.17.14",
+    "ts-node": "^10.2.1",
+    "ts-node-dev": "^1.1.8"
+  },
+  "dependencies": {
+    "@discordjs/builders": "^0.10.0",
+    "@discordjs/rest": "^0.2.0-canary.0",
+    "common-tags": "^1.8.0",
+    "date-and-time": "^2.1.2",
+    "discord-api-types": "^0.26.0",
+    "discord-modals": "^1.1.5",
+    "discord.js": "^13.1.0",
+    "dotenv": "^8.6.0",
+    "ms": "^2.1.3",
+    "typescript": "^4.5.2"
+  }
+}

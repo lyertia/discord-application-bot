@@ -1,0 +1,6 @@
+.prettierrc.json
+package-lock.json
+json.sqlite
+.env
+node_modules/
+dist/
