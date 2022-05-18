@@ -17,7 +17,6 @@ export const command: Command = {
           .setMaxLength(30)
           .setPlaceholder('Write something...')
           .setRequired(true)
-          .setValue('Empty'),
       )
       .addComponents(
         new TextInputComponent()
@@ -28,7 +27,6 @@ export const command: Command = {
           .setMaxLength(10)
           .setPlaceholder('https://www.lyertia.wtf')
           .setRequired(true)
-          .setValue('Empty'),
       )
 
     /// you can add more questions here
