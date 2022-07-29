@@ -19,8 +19,8 @@
  <img src="https://cdn.discordapp.com/attachments/936732401013501982/944173208905609236/unknown.png">
 
 # Support
-- [www.lyertia.wtf](https://lyertia.wtf/)
-- [Discord Guild](https://akamedev.com)
+- [Web](https://lyertia.eu.org/)
+- [Discord Guild](https://discord.gg/a6mBgqgSgG)
 
 # License
 - Its protected by Creative Commons ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/))
