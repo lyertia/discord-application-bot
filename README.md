@@ -3,6 +3,10 @@
 - With ([Modal Interactions](https://discord.com/developers/docs/interactions/receiving-and-responding#interaction-response-object-modal))
 - With TypeScript, discord.js
 
+# How to Run
+
+- Note: This bot running whithout build. You should run it with ts-node (i was use it).
+- Run command: `npx ts-node src/index.ts` or install ts-node and run: `ts-node src/index.ts`
 # Screenshots
 
 ##### From bot
